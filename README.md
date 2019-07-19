@@ -5,6 +5,13 @@ By virtue of being written in C++, this client works in several different platfo
 
 [![Clients with iPhone, QT, Console and web](https://cldup.com/ukvVVZmvYV.png)](https://github.com/socketio/socket.io-client-cpp/tree/master/examples)
 
+## Install Guide (for Windows + Visual Studio 2013)
+
+0. Requirement : boost v1.65.0, visual studio 2013
+1. [With CMAKE Boost](./BOOST_WIN.md)
+2. [With CMAKE Socket.IO](./INSTALL_WIN.md)
+
+
 ## Features
 
 - 100% written in modern C++11
@@ -14,6 +21,7 @@ By virtue of being written in C++, this client works in several different platfo
 - Multiplex support
 - Similar API to the Socket.IO JS client
 - Cross platform
+
 
 ## Installation alternatives
 
