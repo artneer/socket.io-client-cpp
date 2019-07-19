@@ -16,13 +16,13 @@ CONFIG+=c++11
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    nicknamedialog.cpp
+        nicknamedialog.cpp
 
 HEADERS  += mainwindow.h \
-    nicknamedialog.h
+        nicknamedialog.h
 
 FORMS    += mainwindow.ui \
-    nicknamedialog.ui
+        nicknamedialog.ui
 
 CONFIG(debug, debug|release):DEFINES +=DEBUG=1
 
@@ -32,7 +32,6 @@ DEPENDPATH += $$PWD/../../../build/lib
 
 CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build/lib/Release/ -lsioclient
 else:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build/lib/Debug/ -lsioclient
-
 
 CONFIG(release, debug|release): LIBS += -L$$PWD/../../../build/lib/Release/ -lboost_random
 else:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../build/lib/Debug/ -lboost_random
